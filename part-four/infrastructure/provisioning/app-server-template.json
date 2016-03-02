@@ -21,9 +21,9 @@
     "EC2InstanceAppServer" : {
       "Type" : "AWS::EC2::Instance",
       "Properties" : {
-        "ImageId" : "ami-20bd1f57",
+        "ImageId" : "ami-3ddb674e",
         "InstanceType" : "m1.medium",
-        "KeyName" : "main",
+        "KeyName" : "irelandd",
         "SubnetId" : { "Ref" : "SubnetId" },
         "SecurityGroupIds" : [ { "Ref" : "SecurityGroupId" } ],
         "Tags" : [ { "Key" : "Name", "Value" : { "Fn::Join" : ["", ["App Server - Build ", { "Ref" : "BuildNumber" } ] ] } } ],
